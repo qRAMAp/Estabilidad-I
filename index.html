@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Desarrollo por Lassalle Ramiro para la catedra de estabilidad I de ing.Mecanica de la UTN Facultad Regional Córdoba -->
+</head>
+<body>
+    <div class="div1"><header>
+        <h1>Cátedra de Estabilidad I</h1>
+        <h2>Gato tijera</h2>
+    </header></div>
+
+    <div class="div2">
+        <form>
+            <p>¿Qué rueda quiere levantar?</p> <select id="eje"><option>Delantera</option> <option>Trasera</option></select>
+            <p>Ingrese el peso del vehiculo</p> <input type="number" id="peso" placeholder="Hasta 2500Kg"></input>    
+            <p>Ingrese la altura a la que desea levantarlo</p> <input type="number" id="altura" placeholder="Hasta 25cm"></input>
+            
+            <button type="button" onclick="datos()" >Calcular</button>
+        </form>
+    </div>
+
+    <div class="div3">
+        <div class="center"><img id="img1" src="gato.png"></div>
+    </div>
+
+
+    <div class="div4">
+
+        <p id="fCB"></p>
+        <p id="fCC"></p>
+        <p id="fAB"></p>
+        <p id="fBB"></p>
+        <p id="fAA"></p>
+        <p id="fAy"></p>
+    
+    </div>
+
+    <div class="div5">
+        <div class="center"><img id="img2" src="blanco.png"></div>
+    </div>
+
+
+        <div class="div6"><br><p>Para la catedra de Estabilidad I de la carrera de ING. Mecanica de la UTN frc.</p></div>
+        <div class="div7"><ol>
+            <li>Lassalle Ramiro - 72950</li>
+            <li>Ros Emanuel - 71040</li>
+            <li>Lagrutta Thiago - 87791</li>
+        </ol></div>
+
+</body>
+</html>
