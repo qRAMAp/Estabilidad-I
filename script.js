@@ -45,10 +45,10 @@ function calcularPines(){
 
     console.log(tita, fCB , fCC, fAB, fBB, fAA, fAy);
     document.getElementById("fCB").innerHTML ="La fuerza en la barra CB es: <b>" + Math.round(fCB * 1000)/1000 +" Kg</b>";
-    document.getElementById("fCC").innerHTML ="La fuerza en la barra CC es: <b>" + Math.round(fCC * 1000)/1000 +" Kg</b>";
+    document.getElementById("fCC").innerHTML ="La fuerza en la barra CC' es: <b>" + Math.round(fCC * 1000)/1000 +" Kg</b>";
     document.getElementById("fAB").innerHTML ="La fuerza en la barra AB es: <b>" + Math.round(fAB * 1000)/1000 +" Kg</b>";
-    document.getElementById("fBB").innerHTML ="La fuerza en la barra BB es: <b>" + Math.round(fBB * 1000)/1000 +" Kg</b>";
-    document.getElementById("fAA").innerHTML ="La fuerza de la reaccion AA es: <b>" + Math.round(fAA * 1000)/1000 +" Kg</b>";
+    document.getElementById("fBB").innerHTML ="La fuerza en la barra BB' es: <b>" + Math.round(fBB * 1000)/1000 +" Kg</b>";
+    document.getElementById("fAA").innerHTML ="La fuerza de la reaccion AA' es: <b>" + Math.round(fAA * 1000)/1000 +" Kg</b>";
     document.getElementById("fAy").innerHTML ="La fuerza de la reaccion Ay es: <b>" + Math.round(fAy * 1000)/1000 +" Kg</b>";
     //Con Math.round redondeamos el valor de la fuerza.
     //Multiplicando por 1000 y dividiendo FUERA DEL PARENTESIS por 1000 limitamos la cantidad de decimales (el numero de ceros equivale al numero de decimales)
