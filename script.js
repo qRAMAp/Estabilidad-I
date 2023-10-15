@@ -32,7 +32,7 @@ function transformar(){
 
 function calcularPines(){
     // Calculamos las fuerzas que actúan en el pin "C" //
-    fCB = (peso/2)/Math.sin(tita);
+    fCB = (peso/4)/Math.sin(tita);
     fCC= fCB * Math.cos(tita);
 
     // Calculamos las fuerzas que actúan en el pin "B" //
@@ -41,9 +41,9 @@ function calcularPines(){
 
     // Calculamos las fuerzas que actúan en el pin "A" //
     fAA = fCC;                  // Como fAA = fAB.cos(tita) , fCC = fCB.cos(tita) y fAB = fCB ----> fAA = fCC //
-    fAy = peso/2;               //Como fAy = fAB.sen(tita) , fCB = (peso/2)/sen(tita) y fAB = fCB ----> fAy = peso/2 //
+    fAy = peso/4;               //Como fAy = fAB.sen(tita) , fCB = (peso/4)/sen(tita) y fAB = fCB ----> fAy = peso/4 //
 
-    console.log(fCB , fCC, fAB, fBB, fAA, fAy);
+    console.log(tita, fCB , fCC, fAB, fBB, fAA, fAy);
     document.getElementById("fCB").innerHTML ="La fuerza en la barra CB es: <b>" + Math.round(fCB * 1000)/1000 +" Kg</b>";
     document.getElementById("fCC").innerHTML ="La fuerza en la barra CC es: <b>" + Math.round(fCC * 1000)/1000 +" Kg</b>";
     document.getElementById("fAB").innerHTML ="La fuerza en la barra AB es: <b>" + Math.round(fAB * 1000)/1000 +" Kg</b>";
